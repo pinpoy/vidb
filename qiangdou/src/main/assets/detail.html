@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>强手抢红包-使用帮助</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="抢红包,微信红包,QQ红包" />
+    <style type="text/css">
+*{
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: #fff;
+  color: #000;
+  font: 12px/1 "microsoft yahei", Arial, sonti, Verdana, Geneva, Helvetica, sans-serif;
+}
+body {
+  font-size: 100%;
+  font-family: inherit;
+}
+ol,
+ul {
+  list-style: none;
+  list-style-position: outside;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+strong {
+  font-weight: bold;
+}
+caption,
+th {
+  text-align: left;
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+/* to preserve line-height and selector appearance */
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  /*to enable resizing for IE*/
+  *font-size: 100%;
+}
+textarea {
+  resize: none;
+}
+/*because legend doesn't inherit in IE */
+legend {
+  color: #000;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+a,
+a:visited,
+a:active,
+a:link,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.no-repeat {
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.text {
+  vertical-align: middle;
+}
+.hide {
+  display: none;
+}
+.hidden {
+  visibility: hidden;
+}
+.right {
+  float: right;
+  height: 100%;
+}
+.left {
+  float: left;
+  height: 100%;
+}
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../image/icon_detail.png);
+  background-size: 3.65714286em 58.51428571em;
+}
+.icon-mask {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: inherit;
+  -webkit-mask-image: url(../image/icon_detail.png);
+  -webkit-mask-size: 3.65714286em 58.51428571em;
+}
+.icon-home {
+  height: 1.82857143em;
+  width: 1.82857143em;
+  background-position: 0 0em;
+}
+.icon-mask-home {
+  height: 1.82857143em;
+  width: 1.82857143em;
+  -webkit-mask-position: 0 0em;
+}
+.icon-calendar {
+  height: 1.82857143em;
+  width: 1.82857143em;
+  background-position: 0 -1.82857143em;
+}
+.icon-mask-calendar {
+  height: 1.82857143em;
+  width: 1.82857143em;
+  -webkit-mask-position: 0 -1.82857143em;
+}
+.icon-star-gold {
+  height: 1.82857143em;
+  width: 1.82857143em;
+  background-position: 0 -3.65714286em;
+}
+.icon-mask-star-gold {
+  height: 1.82857143em;
+  width: 1.82857143em;
+  -webkit-mask-position: 0 -3.65714286em;
+}
+.icon-star-gray {
+  height: 1.82857143em;
+  width: 1.82857143em;
+  background-position: 0 -5.48571429em;
+}
+.icon-mask-star-gray {
+  height: 1.82857143em;
+  width: 1.82857143em;
+  -webkit-mask-position: 0 -5.48571429em;
+}
+.icon-mask-star-gold,
+.icon-mask-star-gray,
+.icon-star-gold,
+.icon-star-gray {
+  height: 2.4em;
+  width: 2.4em;
+}
+.icon-download {
+  height: 5em;
+  width: 5em;
+  background-position: 0 -7.42857143em;
+}
+.icon-arrow-left {
+  height: 38em;
+  width: 6.4em;
+  background-position: 0 -10.28571429em;
+}
+.icon-arrow-right {
+  height: 38em;
+  width: 6.4em;
+  background-position: 0 -32em;
+}
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000;
+  font-family: "microsoft yahei", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.banner {
+  width: 100%;
+  height: 100%;
+}
+.banner img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.sub-title {
+  position: relative;
+  height: 0.8em;
+  overflow: visible;
+  margin: 0em 0.8em 1em;
+  border-bottom: 1px dashed red;
+  text-align: center;
+}
+.sub-title .text {
+  padding: 0em 0.5em;
+  background-color: #ffffff;
+  color: red;
+  font-size: 160%;
+}
+.sub-title:not(:first-child) {
+  margin-top: 1.5em;
+}
+.main-nav {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+  padding: 1em;
+  background-color: #ffffff;
+}
+.main-nav-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3em;
+  border-bottom: 1px solid #c9c9c9;
+  box-shadow: 1px 1px 3px #999;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-align: center;
+}
+.main-nav-container .info {
+  padding: 0em;
+}
+.header-container,
+.main-detail-box,
+.main-nav {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.info {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1em 0em;
+}
+.info .btn {
+  margin: 0 auto;
+  margin-bottom: 0.6em;
+}
+.video .main-nav-container {
+  display: block;
+}
+.video video {
+  width: 100%;
+  height: 100%;
+}
+.btn {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  display: block;
+  width: 80%;
+  padding: 0.4em 0em;
+  border-radius: 1em;
+  border: 1px solid #f5ca30;
+  color: #b63522;
+  background: #ffffff;
+}
+.btn .text {
+  font-size: 150%;
+}
+.btn .small {
+  font-size: 120%;
+}
+.btn-green {
+  border: none;
+  background-color: #31ba96;
+}
+.btn-green .text {
+  color: #ffffff;
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.bk-red,
+.bk-green {
+  display: inline-block;
+  padding: 0.1em 0.3em 0.2em;
+  border-radius: 0.3em;
+}
+.bk-red {
+  background-color: red;
+  color: #ffffff;
+}
+.bk-green {
+  background-color: green;
+  color: #ffffff;
+}
+.content {
+  margin: 1em 1em;
+  padding: 0em 1em 0.8em;
+  background-color: #ffffff;
+  border-radius: 0.3em;
+  border-bottom: 1px solid #c9c9c9;
+  box-shadow: 1px 1px 3px #999;
+  text-align: left;
+}
+.content h2 {
+  font-weight: bold;
+  font-size: 180%;
+}
+.content h3 {
+  line-height: 2;
+  font-weight: bold;
+  font-size: 140%;
+}
+.content p {
+  line-height: 1.2;
+  font-size: 120%;
+  margin-bottom: 0.6em;
+}
+.content .split {
+  border-bottom: 1px dashed #999;
+  margin: 1em 0em;
+}
+.content img {
+  margin: 0.4em 0em;
+  width: 100%;
+}
+.content .btn {
+  width: 90%;
+}
+.main-detail-box {
+  display: block;
+  background-color: #ffffff;
+}
+.top {
+  background-color: rgba(67, 206, 167, 0.6);
+  border-radius: 2em;
+  padding: 0.5em;
+  border: 1px solid #43cba7;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  z-index: 9;
+}
+.top .text {
+  font-size: 120%;
+}
+
+    </style>
+</head>
+<body>
+<a name="top"></a>
+<div class="main-nav">
+    <div class="main-nav-container">
+        <div class="info">
+            <h2 class="sub-title"><span class="text">帮助教程</span></h2>
+            <a href="#system" class="btn"><span class="text">开启系统辅助服务</span></a>
+            <a href="#me" class="btn"><span class="text">开启抢红包服务</span></a>
+            <a href="#micro" class="btn"><span class="text"><b class="bk-green">微信</b>设置</span></a>
+            <a href="#qq" class="btn"><span class="text"><b class="bk-red">QQ</b>设置</span></a>
+            <a href="#notice" class="btn"><span class="text">消息通知设置</span></a>
+            <a href="#defend" class="btn"><span class="text">防封号设置</span></a>
+            <a href="#advanced" class="btn"><span class="text">高级功能设置</span></a>
+            <h2 class="sub-title"><span class="text">常见问题</span></h2>
+            <a href="#auto" class="btn"><span class="text small">为什么强手抢红包不自动抢？</span></a>
+            <a href="#close" class="btn"><span class="text small">为什么软件老是自动关闭？</span></a>
+            <a href="#forbidden" class="btn"><span class="text small">为什么微信抢红包功能被封了3天？</span></a>
+        </div>
+    </div>
+</div>
+<div class="main-detail-box">
+    <div class="content">
+        <h2>帮助教程</h2>
+    </div>
+</div>
+<a name="system" class="main-detail-box">
+    <div class="content">
+        <h3>一、开启系统辅助服务</h3>
+
+        <p>使用强手抢红包软件自动抢红包，必须开启系统辅助功能。</p>
+
+        <p>1.&nbsp;&nbsp;进入系统辅助功能设置界面（二选一）</p>
+
+        <p class="indent">a.&nbsp;&nbsp;强手抢红包软件启动弹出开启辅助功能提示框（如下左图）。点击[去开启]，即可前往系统辅助功能界面开启。</p>
+
+        <p class="indent">b.&nbsp;&nbsp;打开手机自带【设置】功能，点击【系统设置】＞【辅助功能】。如下图所示</p>
+        <img src="http://red.0i-i0.com/images/step1.1.png" />
+
+        <p>2.&nbsp;&nbsp;开启系统辅助功能（亦作“无障碍功能”）</p>
+
+        <p class="indent">前往【辅助功能】＞【服务】＞【强手抢红包服务】，选择【强手抢红包】以开启服务。如下图所示</p>
+        <img src="http://red.0i-i0.com/images/step1.2.png" />
+    </div>
+</a>
+<a name="me" class="main-detail-box">
+    <div class="content">
+        <h3>二、开启抢红包服务</h3>
+
+        <p>1.&nbsp;&nbsp;在系统辅助功能开启之后，进入强手抢红包应用，点击【设置】按钮，进入强手抢红包设置界面。</p>
+
+        <p><span class="red">2.&nbsp;&nbsp;点击【抢】字按钮，开始自动抢红包。(关键！必须开启！)</span></p>
+        <img src="http://red.0i-i0.com/images/step2.1.png" />
+        <img src="http://red.0i-i0.com/images/step2.2.png" />
+        <img src="http://red.0i-i0.com/images/step2.3.png" />
+    </div>
+</a>
+<a name="micro" class="main-detail-box">
+    <div class="content">
+
+        <h3>三、微信设置</h3>
+
+        <p>1.&nbsp;&nbsp;开启消息通知。打开微信，在【设置】＞【新消息提醒】里，前两个选项【接受新消息提醒】和【通知显示消息详情】按钮开启。<span class="red">（重要）</span></p>
+        <!--<img src="http://red.0i-i0.com/images/step3.1.png" />-->
+
+        <p>2.&nbsp;&nbsp;开启群消息提醒。打开微信，进入任意一个需要抢红包的微信群组，【群右上角多人头像】＞下拉找到【消息免打扰】，勾选关闭。</p>
+        <img src="http://red.0i-i0.com/images/step3.1.png" />
+        <p>3.&nbsp;&nbsp;<span class="red">确保能抢到红包的注意事项：</span></p>
+        <p>a.&nbsp;&nbsp;切勿手机、电脑同时登录微信，以免影响手机微信接受消息，耽误自动抢红包。</p>
+        <p>b.&nbsp;&nbsp;请不要停留在当前需要抢红包的群聊界面，如下图所示：<br>［帅哥美女红包群］在发红包，如果你在这个界面，强手抢红包就会失效。除此之外，你停留在其他什么界面都会抢！<br>（建议，最好停留在微信主界面，勿停留在任何聊天界面）</p>
+        <img src="http://red.0i-i0.com/images/step3.2.png" />
+    </div>
+</a>
+<a name="qq" class="main-detail-box">
+    <div class="content">
+
+        <h3>四、QQ设置</h3>
+        <p>1.&nbsp;&nbsp;开启消息通知。打开QQ，【点击头像】＞【设置】＞【消息通知】，默认为开启状态。如果之前没有设置过，可以略过此项。具体设置如下图：</p>
+        <img src="http://red.0i-i0.com/images/step4.1.png" />
+        <p>2.&nbsp;&nbsp; 开启群消息提醒。打开QQ，进入任意一个需要抢红包的QQ群组，【群右上角多人头像】＞【个人设置】＞【群消息设置】，默认为接收消息并提醒。如果之前没有设置过，可以略过此项。具体设置如下图：</p>
+        <img src="http://red.0i-i0.com/images/step4.2.png" />
+        <p>3.&nbsp;&nbsp;<span class="red">确保能抢到红包的注意事项：</span></p>
+        <p>a.&nbsp;&nbsp;切勿手机、电脑同时登录QQ，以免影响手机QQ接受消息，耽误自动抢红包。</p>
+        <p>b.&nbsp;&nbsp;请不要停留在QQ界面，返回到手机系统主界面，否则监测不到手机QQ信息提醒，无法自动抢红包<br>（建议，最好停留在QQ主界面，勿停留在任何聊天界面）</p>
+        <img src="http://red.0i-i0.com/images/step4.3.png" />
+    </div>
+</a>
+<a name="notice" class="main-detail-box">
+    <div class="content">
+
+        <h3>五、消息通知设置</h3>
+
+        <p>1.&nbsp;&nbsp;打开手机自带【设置】功能。</p>
+
+        <p>2.&nbsp;&nbsp;进入【系统设置】＞【应用程序】；</p>
+
+        <p>3.&nbsp;&nbsp;在应用程序中将qq以及微信的通知状态全部打开</p>
+        <!--<img src="src/image/help04.png" />-->
+    </div>
+</a>
+<a name="defend" class="main-detail-box">
+    <div class="content">
+
+        <h3>六、防封号设置</h3>
+
+        <p>系统默认允许微信读取已安装应用列表权限，再结合技术手段即可知道手机是否安装了强手抢红包。</p>
+        <p>此时只需安装使用360手机卫士、LBE安全大师等软件，禁止微信“获取读取已安装应用列表”权限就能成功防止微信和QQ对强手抢红包的封杀。</p>
+        <p>如下图，以360手机卫士为例：<br>进入【360卫士】＞【软件管理】＞【权限管理】＞【微信】禁止【读取已安装应用列表】和【获取设备信息】即可。</p>
+        <img src="http://red.0i-i0.com/images/step6.1.png" />
+    </div>
+</a>
+<a name="advanced" class="main-detail-box">
+    <div class="content">
+
+        <h3>七、抢红包高级功能设置</h3>
+
+        <p>1.&nbsp;&nbsp;进入强手抢红包应用后，点击【设置】按钮，进入强手抢红包设置界面。</p>
+
+        <p><span class="red">2.&nbsp;&nbsp;高级功能：</span></p>
+
+        <p class="indent">a.&nbsp;&nbsp;  点击【关键词屏蔽】按钮，开启后将会不抢含有关键词的红包，关键词可以是群名（昵称）或者红包留言如测挂，关键词之间可以用空格隔开。</p>
+
+        <p class="indent">b.&nbsp;&nbsp;点击【延时抢红包】，可设置延迟抢红包，以防每次都是第一个抢到红包而被发红包者怀疑开启了抢红包外挂。</p>
+
+        <p class="indent">c.&nbsp;&nbsp;点击【自动回复】，开启抢红包后自动回复。也可防止被发红包者或群主怀疑开启了抢红包外挂，而被踢出群组。</p>
+
+        <p class="indent">d.&nbsp;&nbsp;点击【自定义感谢语】，可自定义输入抢红包后自动回复的感谢语。</p>
+
+        <p class="indent">e.&nbsp;&nbsp;点击【锁屏抢红包】，可开启手机在锁屏状态下抢红包的功能。<br><span class="red">(前提是，手机锁屏必须未设置锁屏密码。)</span></p>
+        <img src="http://red.0i-i0.com/images/step7.1.png" />
+    </div>
+</a>
+<a name="faq" class="main-detail-box ">
+    <div class="content">
+        <h2 class="sub-title"><span class="text">常见问题</span></h2>
+        <a href="#auto" class="btn"><span class="text small">为什么强手抢红包不自动抢？</span></a>
+        <a href="#close" class="btn"><span class="text small">为什么软件老是自动关闭？</span></a>
+        <a href="#forbidden" class="btn"><span class="text small">为什么微信抢红包功能被封了3天？</span></a>
+    </div>
+</a>
+<a name="auto" class="main-detail-box">
+    <div class="content">
+        <h3>一、为什么强手抢红包不自动抢？</h3>
+
+        <p>前提，大家必须按照上述帮助教程正确配置哦！强手抢红包软件，经过目前市面上主流机型测试，均100%自动抢哦！</p>
+        <div class="split"></div>
+        <p><span class="bk-red">疑问1</span>&nbsp;&nbsp;自己发的红包，不会自动抢。</p>
+        <p><span class="bk-green">解答1</span>&nbsp;&nbsp;要测试强手抢红包功能的话，务必叫你朋友给你发送一个红包哦。</p>
+        <div class="split"></div>
+        <p><span class="bk-red">疑问2</span>&nbsp;&nbsp;当前聊天窗口内的红包，不会自动抢。</p>
+        <p><span class="bk-green">解答2</span>&nbsp;&nbsp;要抢红包的话，建议微信或者QQ退出聊天界面，返回到微信或QQ的主界面。</p>
+        <div class="split"></div>
+        <p><span class="bk-red">疑问3</span>&nbsp;&nbsp;红包个数发的太少，没抢到。</p>
+        <p><span class="bk-green">解答3</span>&nbsp;&nbsp;即使没抢到，强手抢红包也会有前往抢红包的动作哦。</p>
+        <div class="split"></div>
+        <p><span class="bk-red">疑问4</span>&nbsp;&nbsp;好友发送的文字消息“微信红包”（或者“QQ红包”），强手抢红包也提示抢红包？</p>
+        <p><span class="bk-green">解答4</span>&nbsp;&nbsp;因为目前抢红包外挂，均是通过监测微信（或QQ）消息提醒，而模拟用户的操作前往抢红包滴。所以，一旦有文字消息“微信红包”（或者“QQ红包”）的提示，强手抢红包也会提示去抢哦。</p>
+    </div>
+</a>
+<a name="close" class="main-detail-box">
+    <div class="content">
+        <h3>二、为什么软件老是自动关闭？</h3>
+        <p><span class="bk-red">原因</span>&nbsp;&nbsp;某些系统内置了省电管理、性能优化清理等，或者你安装了手机管家、手机安全软件，设置了省电管理或者性能优化清理。</p>
+        <div class="split"></div>
+        <p><span class="bk-green">通用解决方案</span></p>
+        <p>将强手抢红包设置为后台保护（或者白名单等，因手机型号不同而不同）；</p>
+        <p>具体操作可百度搜索下 “某某手机自动关闭应用软件”。</p>
+        <div class="split"></div>
+        <p><span class="bk-green">主流手机解决案例</span></p>
+        <p>[<span class="red">小米</span>]解决方案</p>
+        <p>由于系统版本不同，小米的省电管理、性能优化清理设置比较繁琐！</p>
+        <p>最直接方法是，［长按Home］->［近期任务列表］->按住［强手抢红包］向下滑->[锁定强手抢红包]不被自动关闭。</p>
+        <p>[<span class="red">魅族</span>]解决方案</p>
+        <p>系统内置[安全中心]->[省电模式]->点击最右下方图标按钮->进入[待机耗电管理]->[保持强手抢红包运行按钮]</p>
+        <p>[<span class="red">华为</span>]解决方案</p>
+        <p>进入手机系统[设置]->[省电管理]->点击[受保护应用]->将[强手抢红包]应用开启保护即可。</p>
+    </div>
+</a>
+<a name="forbidden" class="main-detail-box">
+    <div class="content">
+        <h3>三、为什么微信抢红包功能被封了3天？</h3>
+        <p><span class="bk-red">原因</span>&nbsp;&nbsp;因为你的手机上还安装了其他被微信封杀的抢红包软件、或者是你未设置自动回复！</p>
+        <div class="split"></div>
+        <p><span class="bk-green">解决方案</span></p>
+        <p>目前，强手抢红包还没在微信黑名单！建议大家按照如下步骤操作，防止微信封杀：</p>
+        <p>1.&nbsp;&nbsp;设置自动回复，经常换下感谢语</p>
+        <p>2.&nbsp;&nbsp;彻底卸载其他抢红包软件，不要在手机上留有其他抢红包软件的残留文件及文件夹</p>
+        <p>3.&nbsp;&nbsp;根据帮助教程，禁止微信读取你的已安装应用列表！</p>
+        <p>注意：目前，做到第1、2点已经足够安全了！第3点，需要手机有Root权限，如何Root可百度搜索下！</p>
+        <p style="color: red;font-weight: bold;">划重点：即将推出好友邀请获赠VIP体制，敬请期待。</p>
+    </div>
+</a>
+<img src="http://red.0i-i0.com/images/help07.png"/ style="width: 100%;">
+
+<a href="#top" class="top"><span class="text">返回<br>顶部</span></a>
+
+<script src='http://libs.baidu.com/jquery/2.0.0/jquery.min.js'></script>
+<script>
+var channel = window.location.search.split('?')[1];
+if (channel) {
+    $('a[href]').each(function (n) {
+        if (this.href.charAt(0) !== '#'){
+            this.href += '?' + channel;
+        }
+    });
+}
+var isIOS = $.os.ios;
+var isPC = (function (ua, platform) {
+    return (
+                   /win/i.test(platform) ||
+                   /mac/i.test(platform)/* ||
+                 /x11|linux/i.test(platform)*/
+           ) &&
+           !/phone|android|adr/i.test(ua);
+}).call({}, window.navigator.userAgent, window.navigator.platform);
+var isAndroid = !(isIOS || isPC);
+window._czc = window._czc || [];
+var logPrefix = 'help-' + (isIOS ? 'ios-' : isPC ? 'pc-' : 'android-');
+var touchEvent = $.os.tablet || $.os.phone ? 'tap' : 'click';
+$('#download360').bind(touchEvent, function () {
+    window._czc.push(['_trackEvent', 'hongbao', logPrefix + 'download360']);
+});
+(function () {
+    var html = document.documentElement;
+    var field = 'currentFontSize';
+    var baseSize = 10;
+    var BaseWidth = 320;
+    var maxSize = 18;
+    window.addEventListener('resize', setFontSize);
+    setFontSize();
+    function setFontSize() {
+        var w = html.clientWidth;
+        //w > 720 && (w = 720);
+        var h = html.clientHeight;
+        var scale = w / BaseWidth;
+        var fontSize = Math.floor(scale * baseSize);
+        fontSize = fontSize < baseSize ? baseSize : fontSize;
+        fontSize = fontSize > maxSize ? maxSize : fontSize;
+        if (fontSize === html[field]) {
+            return false;
+        }
+        html.style.fontSize = fontSize + 'px';
+        html[field] = fontSize;
+    }
+})();
+</script>
+<div style="display: none;">
+    <script src="http://s11.cnzz.com/z_stat.php?id=1255819843&web_id=1255819843" language="JavaScript"></script>
+</div>
+</body>
+</html>

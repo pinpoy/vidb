@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="navigation">
+        <attr name="tv_title" format="string" />
+        <attr name="left_drawable" format="reference"></attr>
+        <attr name="right_drawable" format="reference"></attr>
+    </declare-styleable>
+
+</resources>

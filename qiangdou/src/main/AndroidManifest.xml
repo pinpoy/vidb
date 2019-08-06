@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mogo.space">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc.hce" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.webkit.permission.PLUGIN" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 照相的权限 -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <!-- 读取短信验证码	可选 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 录像需要的权限 -->
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--集成广告SDK-->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.CREATE_SHORTCUT" />
+    <!--bugly版本更新-->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+
+    <application
+        android:name="com.moogos.spacex.core.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/m_ic_launcher"
+        android:label="@string/uapp_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="BaiduMobAd_APP_ID"
+            android:value="b17e63c2" />
+
+        <activity
+            android:name="com.moogos.spacex.core.QiangHongBaoActivity"
+            android:enabled="true"
+            android:label="@string/uapp_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.moogos.spacex.SplashActivity"
+            android:enabled="true"
+
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity
+            android:name="com.moogos.spacex.core.SplashActivity"
+            android:enabled="true"
+
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+
+        <activity
+            android:name="com.moogos.spacex.core.SecondaryActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5710b86467e58e3762000ecf" />
+
+        <activity
+            android:name="com.jesgoo.sdk.AppActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.moogos.spacex.core.newfun.LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|navigation"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.moogos.spacex.core.newfun.RegisterActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|navigation"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.moogos.spacex.core.newfun.GrabRedActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|navigation"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.moogos.spacex.core.newfun.SettingActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|navigation"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.moogos.spacex.core.newfun.HelpWebviewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|navigation"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.moogos.spacex.core.newfun.MyRedEnvelope"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|navigation"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.moogos.spacex.core.newfun.TaskBarActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|navigation"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--bugly版本更新-->
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent" />
+
+
+        <!--<service-->
+        <!--android:name="com.moogos.spacex.core.newfun.AccService"-->
+        <!--android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.accessibilityservice.AccessibilityService" />-->
+        <!--</intent-filter>-->
+
+        <!--<meta-data-->
+        <!--android:name="android.accessibilityservice"-->
+        <!--android:resource="@xml/service_config" />-->
+        <!--</service>-->
+
+        <service
+            android:name="com.moogos.spacex.core.newfun.EnvelopeService"
+            android:enabled="true"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/envelope_service_config" />
+        </service>
+
+        <!--<service-->
+        <!--android:name="com.moogos.spacex.core.QiangHongBaoService"-->
+        <!--android:enabled="true"-->
+        <!--android:label="${app_label}"-->
+        <!--android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.accessibilityservice.AccessibilityService" />-->
+        <!--</intent-filter>-->
+
+        <!--<meta-data-->
+        <!--android:name="android.accessibilityservice"-->
+        <!--android:resource="@xml/taskbackconfig" />-->
+        <!--</service>-->
+    </application>
+
+
+</manifest>

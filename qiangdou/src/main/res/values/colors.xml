@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="translucent">#50000000</color>
+    <color name="yellow">#FF8F00</color>
+    <color name="red">#CF0000</color>
+    <color name="gray">#DFDFDF</color>
+    <color name="blue">#4080D0</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="mine_bag_title_click">#be331f</color>
+    <color name="mine_bag_title_noclick">#7a7a7a</color>
+    <color name="mine_bag_title_blankgroud">#edebeb</color>
+    <color name="mine_bag_mid_blankgroud">#f5f5f5</color>
+    <color name="mine_bag_list_head">#7a7a7a</color>
+    <color name="mine_bag_list_head2">#c0c0c0</color>
+    <color name="mine_bag_mid_title">#e85946</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="divider">#ffd2d2d2</color>
+
+    <!-- 自定义 dialog弹出框颜色 -->
+    <color name="trans">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+
+    <color name="tv_black">#333333</color>
+    <color name="delete_red">#FF3a31</color>
+    <color name="input_txt_con_hint_color">#BBBBBB</color>
+    <color name="color_00">#00000000</color>
+    <color name="r999999">#999999</color>
+    <color name="e82400">#e82400</color>
+</resources>

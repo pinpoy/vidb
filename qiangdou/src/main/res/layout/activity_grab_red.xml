@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grab_bk"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_prompt_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_ad_banner"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/money_result_desc"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/iv_grab_red"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
+        android:src="@drawable/grab_red" />
+
+    <ImageView
+        android:id="@+id/iv_personal_center"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/personal_center" />
+</RelativeLayout>

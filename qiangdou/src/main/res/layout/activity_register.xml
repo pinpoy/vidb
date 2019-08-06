@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_phone"
+            android:paddingLeft="60dip">
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="输入手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColor="#f1978d"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_password"
+            android:paddingLeft="60dip">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="输入密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#f1978d"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/register_vericode"
+            android:paddingLeft="60dip">
+
+            <EditText
+                android:id="@+id/et_veri_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="输入验证码"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#f1978d"
+                android:textSize="18sp" />
+
+            <com.moogos.spacex.views.CountDownView
+                android:id="@+id/cdv_get_verify_code"
+                android:layout_width="87dp"
+                android:layout_height="31dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/get_verify_code"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/rl_veri_code"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/register_referrer"
+            android:paddingLeft="60dip">
+
+            <EditText
+                android:id="@+id/et_referrer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="输入推荐人ID（选填）"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#f1978d"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_register"
+            android:layout_width="164dp"
+            android:layout_height="44dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/register_bt" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

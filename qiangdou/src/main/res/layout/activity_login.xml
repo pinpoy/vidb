@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_phone"
+            android:layout_width="260dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_phone"
+            android:paddingLeft="60dip">
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="输入手机号"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColor="#f1978d"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_password"
+            android:layout_width="260dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_password"
+            android:paddingLeft="60dip">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="输入密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#f1978d"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_login"
+            android:layout_width="164dp"
+            android:layout_height="44dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/login_bt" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="10dp"
+        android:text="立即注册"
+        android:textColor="#fff600"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_forget_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="10dp"
+        android:text="忘记密码"
+        android:textColor="#fff600"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/iv_skip"
+        android:layout_width="48dp"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/login_skip" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/ad_parent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:adjustViewBounds="true" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|right"
+            android:background="#161212"
+            android:src="@drawable/btn_close_adview"
+            android:visibility="gone" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">强手抢红包 注意：如果显示已开启，请再次关闭在开启</string>
+    <string name="uapp_name">财神抢红包</string>
+    <string name="vipuapp_name">强手VIP</string>
+    <string name="status_result_desc"></string>
+    <!--<string name="status_result_desc">您已错过一大波红包，赶紧来抢吧</string>-->
+    <string name="money_result_desc">暂时未抢到哦</string>
+    <string name="money_total_desc">总共为您抢到了 ￥%s 元</string>
+    <string name="description">使用强手抢红包必须打开辅助功能，这样便能够为用户自动抢红包和自动回复。\n
+提示：打开辅助功能时，会收到系统例行的警告提示，我们强手抢红包不会进行侵害用户利益的行为，您可以放心使用。</string>
+
+
+    <string name="settings_open_hint">开启微信抢红包</string>
+    <string name="settings_open_qq_hint">开启QQ抢红包</string>
+    <string name="settings_voice_hint">开启声音</string>
+    <string name="settings_close_ad_hint">去掉广告(仅wifi有广告)</string>
+    <string name="settings_delay_hint">延时抢红包</string>
+    <string name="settings_delay_reply_hint">延时发送感谢语</string>
+    <string name="settings_autoreply_hint">自动回复(防踢)</string>
+    <string name="settings_customwords_hint">自定义感谢语</string>
+    <string name="settings_shield_text">关键字屏蔽</string>
+    <string name="settings_shield_hint">开启后不抢含有关键字的红包，关键字可以是群名（昵称）或红包留言如"测卦"，关键字之间以空格隔开</string>
+    <string name="settings_disguard_hint">锁屏抢红包</string>
+    <string name="settings_disguard_sub_hint">开启此功能，还需取消解锁密码</string>
+    <string name="settings_always_awake_hint">防止锁屏</string>
+    <string name="settings_restart_accessiability_hint">重启辅助服务</string>
+    <string name="settings_always_awake_sub_hint">开启此功能后，但您可手动锁屏</string>
+    <string name="settings_customwords_et_hint">谢谢老板</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+
+
+    <string name="get_verify_code">获取验证码</string>
+    <string name="get_verify_code_again">重新获取验证码</string>
+    <string name="second_get_again">秒后重新获取</string>
+
+    <string name="get_dynamic_password">获取动态密码</string>
+    <string name="get_dynamic_password_again">重新获取动态密码</string>
+
+    <string name="dlg_account_existed_remind">提示</string>
+    <string name="setting_exit_content">确认退出登录</string>
+    <string name="setting_exit_ok">是</string>
+    <string name="setting_exit_no">否</string>
+    <string name="accessibility_description">速度滑冰说不定</string>
+
+</resources>

@@ -1,0 +1,96 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="selectorDialog" >
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Widget.SeekBar.Normal" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">8.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/seekbar_horizontal</item>
+        <item name="android:minHeight">8.0dip</item>
+        <item name="android:thumb">@drawable/seek_thumb</item>
+        <item name="android:thumbOffset">10.0dip</item>
+    </style>
+
+
+    <style name="login_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!--版本更新字体样式-->
+    <style name="tv_version_upload">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- 自定义仿IOS的AlertDialog的样式 -->
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <!-- popwidnow 显示/消失 动画 -->
+    <style name="pop_anim_style_from_bottom">
+        <!-- 指定显示的动画（从底部进入） -->
+        <item name="android:windowEnterAnimation">@anim/pop_show_anim_from_bottom</item>
+        <!-- 指定消失的动画（从顶部退出） -->
+        <item name="android:windowExitAnimation">@anim/pop_hide_anim_from_top</item>
+    </style>
+
+
+    <!-- popwidnow 显示/消失 动画 -->
+    <style name="pop_anim_style_from_center">
+        <!-- 指定显示的动画（从中间进入） -->
+        <item name="android:windowEnterAnimation">@anim/pop_show_anim_from_center</item>
+        <!-- 指定消失的动画（从边界退出） -->
+        <item name="android:windowExitAnimation">@anim/pop_hide_anim_from_bound</item>
+    </style>
+
+
+    <!-- 设置pop由下自上的动画 -->
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pophidden_anim</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/popshow_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+</resources>

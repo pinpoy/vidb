@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff600">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="任务栏"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邀请好友"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/task_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:scrollbars="vertical" />
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="42dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:background="@color/white"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingRight="10dp">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:text="累计邀请人数达到3/3人"-->
+    <!--android:textColor="#000000"-->
+    <!--android:textSize="20sp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@drawable/rectangle_task"-->
+    <!--android:gravity="center"-->
+    <!--android:text="未领取"-->
+    <!--android:textColor="#999999"-->
+    <!--android:textSize="14sp"-->
+    <!--android:visibility="gone" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@drawable/rectangle_task_red"-->
+    <!--android:gravity="center"-->
+    <!--android:text="可领取VIP1"-->
+    <!--android:textColor="#e82400"-->
+    <!--android:textSize="14sp" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="42dp"-->
+    <!--android:layout_marginTop="2dp"-->
+    <!--android:background="@color/white"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingRight="10dp">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:text="累计邀请人数达到3/3人"-->
+    <!--android:textColor="#000000"-->
+    <!--android:textSize="20sp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@drawable/rectangle_task"-->
+    <!--android:gravity="center"-->
+    <!--android:text="未领取"-->
+    <!--android:textColor="#999999"-->
+    <!--android:textSize="14sp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@drawable/rectangle_task_red"-->
+    <!--android:gravity="center"-->
+    <!--android:text="可领取VIP1"-->
+    <!--android:textColor="#e82400"-->
+    <!--android:textSize="14sp"-->
+    <!--android:visibility="gone" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="42dp"-->
+    <!--android:layout_marginTop="2dp"-->
+    <!--android:background="@color/white"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingRight="10dp">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:text="累计邀请人数达到3/3人"-->
+    <!--android:textColor="#000000"-->
+    <!--android:textSize="20sp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@drawable/rectangle_task"-->
+    <!--android:gravity="center"-->
+    <!--android:text="未领取"-->
+    <!--android:textColor="#999999"-->
+    <!--android:textSize="14sp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@drawable/rectangle_task_red"-->
+    <!--android:gravity="center"-->
+    <!--android:text="可领取VIP1"-->
+    <!--android:textColor="#e82400"-->
+    <!--android:textSize="14sp"-->
+    <!--android:visibility="gone" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="42dp"-->
+    <!--android:layout_marginTop="2dp"-->
+    <!--android:background="@color/white"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingRight="10dp">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:text="累计邀请人数达到3/3人"-->
+    <!--android:textColor="#000000"-->
+    <!--android:textSize="20sp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@drawable/rectangle_task"-->
+    <!--android:gravity="center"-->
+    <!--android:text="未领取"-->
+    <!--android:textColor="#999999"-->
+    <!--android:textSize="14sp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@drawable/rectangle_task_red"-->
+    <!--android:gravity="center"-->
+    <!--android:text="可领取VIP1"-->
+    <!--android:textColor="#e82400"-->
+    <!--android:textSize="14sp"-->
+    <!--android:visibility="gone" />-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>
