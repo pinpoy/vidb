@@ -175,25 +175,25 @@ public class GrabRedActivity extends BaseActivity implements
                 return;
             }
             //登录
-            if (AppConfig.getConfig(this).isLogin()) {    //TODO :取消登录状态  AppConfig.getConfig(this).isLogin()
-                ivGrabRed.setImageResource(R.drawable.stop_grab);
-                clickFlag = true;
-                EnvelopeService.ISRUNNING = true;   //开启抢红包
-                Toast.makeText(this, "抢红包", Toast.LENGTH_SHORT).show();
-            } else {  //未登录
-                //试玩三次
-                if (number <= 2000) {      //TODO:进行免费尝试
-                    ivGrabRed.setImageResource(R.drawable.stop_grab);
-                    EnvelopeService.ISRUNNING = true;   //开启抢红包
-                    clickFlag = true;
-                    Toast.makeText(this, "抢红包", Toast.LENGTH_SHORT).show();
-                } else {
-                    EnvelopeService.ISRUNNING = false;
-                    Toast.makeText(this, "请去注册", Toast.LENGTH_SHORT).show();
-                    alertRegisterPop();
-
-                }
-            }
+//            if (AppConfig.getConfig(this).isLogin()) {    //TODO :取消登录状态  AppConfig.getConfig(this).isLogin()
+//                ivGrabRed.setImageResource(R.drawable.stop_grab);
+//                clickFlag = true;
+//                EnvelopeService.ISRUNNING = true;   //开启抢红包
+//                Toast.makeText(this, "抢红包", Toast.LENGTH_SHORT).show();
+//            } else {  //未登录
+//                //试玩三次
+//                if (number <= 2000) {      //TODO:进行免费尝试
+//                    ivGrabRed.setImageResource(R.drawable.stop_grab);
+//                    EnvelopeService.ISRUNNING = true;   //开启抢红包
+//                    clickFlag = true;
+//                    Toast.makeText(this, "抢红包", Toast.LENGTH_SHORT).show();
+//                } else {
+//                    EnvelopeService.ISRUNNING = false;
+//                    Toast.makeText(this, "请去注册", Toast.LENGTH_SHORT).show();
+//                    alertRegisterPop();
+//
+//                }
+//            }
 
 
         }
@@ -249,28 +249,28 @@ public class GrabRedActivity extends BaseActivity implements
         tvPromptMessage.setText(String.format("抢到%s红包：%s元",
                 redMessage.getChannel().equals("qq") ? "QQ" : "微信", redMessage.getMoney()));
 
-        number++;
-        if (!AppConfig.getConfig(this).isLogin() && number >= 3) {     //非登录且超过3次试玩
-            EnvelopeService.ISRUNNING = false;   //关闭抢红包
-            ivGrabRed.setImageResource(R.drawable.grab_red);
-            Toast.makeText(this, "请去注册", Toast.LENGTH_SHORT).show();
-            handler.sendEmptyMessageDelayed(0, 1000);
-        }
+//        number++;
+//        if (!AppConfig.getConfig(this).isLogin() && number >= 3) {     //非登录且超过3次试玩
+//            EnvelopeService.ISRUNNING = false;   //关闭抢红包
+//            ivGrabRed.setImageResource(R.drawable.grab_red);
+//            Toast.makeText(this, "请去注册", Toast.LENGTH_SHORT).show();
+//            handler.sendEmptyMessageDelayed(0, 1000);
+//        }
 
         //非登录状态弹出广告
-        if (interstialAdView == null) {
-            interstialAdView = new AdView(GrabRedActivity.this, AdSize.Interstitial, GlobalConfig.Inter_ADSLOT);
-        }
-        if (!AppConfig.getConfig(this).isLogin()) {
-            interstialAdView.showInterstialAd();
-        }
-
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                sendRedMessage(redMessage);
-            }
-        }, 1000);
+//        if (interstialAdView == null) {
+//            interstialAdView = new AdView(GrabRedActivity.this, AdSize.Interstitial, GlobalConfig.Inter_ADSLOT);
+//        }
+//        if (!AppConfig.getConfig(this).isLogin()) {
+//            interstialAdView.showInterstialAd();
+//        }
+//
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                sendRedMessage(redMessage);
+//            }
+//        }, 1000);
 
 
 //        Intent intent = getIntent();

@@ -2,9 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mogo.space">
 
-    <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="22" />
+    <uses-sdk android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -94,12 +92,7 @@
             android:launchMode="singleInstance"
             android:screenOrientation="portrait" />
 
-        <meta-data
-            android:name="UMENG_CHANNEL"
-            android:value="${UMENG_CHANNEL_VALUE}" />
-        <meta-data
-            android:name="UMENG_APPKEY"
-            android:value="5710b86467e58e3762000ecf" />
+
 
         <activity
             android:name="com.jesgoo.sdk.AppActivity"

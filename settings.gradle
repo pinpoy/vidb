@@ -1,4 +1,1 @@
-//include ':mayizixun'
-include ":qiangdou", ":HuoSdkLib"
-//include ":browser2"
-include ":sese" , ":videodb" , ":ijkmediasdk" , ":ijkthridutils",":mayizixun"
+include ":qiangdou"
